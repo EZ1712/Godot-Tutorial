@@ -1,0 +1,59 @@
+[gd_scene load_steps=12 format=3 uid="uid://cwg764cun83ks"]
+
+[ext_resource type="Texture2D" uid="uid://dxgkryxey2xju" path="res://asset/Frame 3.png" id="1_h2yge"]
+[ext_resource type="Script" uid="uid://dxbcd7b2y4lln" path="res://main.gd" id="1_lquwl"]
+[ext_resource type="Texture2D" uid="uid://cs117jchej3fe" path="res://asset/Frame 4.png" id="2_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://dcu0teowodgps" path="res://asset/Frame 5.png" id="3_lquwl"]
+[ext_resource type="Script" uid="uid://dh2c05gye3vls" path="res://animated_sprite_2d.gd" id="4_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://boo73yq7ms215" path="res://asset/WhatsApp Image 2025-10-19 at 20.06.02.jpeg" id="6_7mycd"]
+[ext_resource type="Texture2D" uid="uid://dqaof8oggtp8" path="res://asset/Screenshot 2025-10-19 201639.png" id="7_kek77"]
+[ext_resource type="Texture2D" uid="uid://ceuk2hj5hs15r" path="res://asset/Screenshot 2025-10-19 201832.png" id="8_4c57u"]
+[ext_resource type="Texture2D" uid="uid://b2gprx1nbxnyh" path="res://asset/Screenshot 2025-10-19 202056.png" id="9_efxa6"]
+[ext_resource type="Texture2D" uid="uid://b8vatsnub3jg7" path="res://asset/Screenshot 2025-10-19 203342.png" id="10_4c57u"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7mycd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_h2yge")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_1bvp3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_lquwl")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_lquwl")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1086, 580)
+sprite_frames = SubResource("SpriteFrames_7mycd")
+autoplay = "default"
+frame_progress = 0.701388
+script = ExtResource("4_1bvp3")
+
+[node name="WhatsAppImage20251019At20_06_02" type="Sprite2D" parent="."]
+position = Vector2(222, 105)
+texture = ExtResource("6_7mycd")
+
+[node name="Screenshot20251019201639" type="Sprite2D" parent="."]
+position = Vector2(550, 87)
+texture = ExtResource("7_kek77")
+
+[node name="Screenshot20251019201832" type="Sprite2D" parent="."]
+position = Vector2(818, 76)
+texture = ExtResource("8_4c57u")
+
+[node name="Screenshot20251019202056" type="Sprite2D" parent="."]
+position = Vector2(210, 270)
+texture = ExtResource("9_efxa6")
+
+[node name="Screenshot20251019203342" type="Sprite2D" parent="."]
+position = Vector2(726, 255)
+texture = ExtResource("10_4c57u")
